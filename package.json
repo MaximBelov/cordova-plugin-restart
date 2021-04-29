@@ -1,0 +1,26 @@
+{
+    "version": "1.0.0",
+    "name": "cordova-plugin-restart",
+    "description": "Cordova/Phonegap plugin to restart application",
+    "license": "MIT",
+        "repository": {
+        "type": "git",
+        "url": "https://github.com/MaximBelov/cordova-plugin-restart.git"
+    },
+    "issue": "https://github.com/MaximBelov/cordova-plugin-restart/issues",
+    "cordova": {
+        "id": "cordova-plugin-restart",
+        "platforms": [
+            "android"
+        ]
+    },
+    "engines": {
+        "cordovaDependencies": {
+            "0.0.1": {
+                "cordova-ios": ">=5.0.0",
+                "cordova-android": ">=8.0.0",
+                "cordova": ">=9.0.0"
+            }
+        }
+    }
+}

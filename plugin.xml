@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin xmlns="http://www.phonegap.com/ns/plugins/1.0"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    id="cordova-plugin-restart"
+    version="1.0.0">
+
+    <name>Restart</name>
+    <description>Cordova/Phonegap plugin to restart application</description>
+    <license>MIT</license>
+    <engines>
+        <engine name="cordova" version=">=9.0.0"/>
+        <engine name="cordova-android" version=">=8.0.0"/>
+        <engine name="cordova-ios" version=">=5.0.0"/>
+    </engines>
+
+    <platform name="android">
+        <config-file target="config.xml" parent="/*">
+            <feature name="RestartPlugin" >
+                <param name="android-package" value="org.apache.cordova.restart.RestartPlugin"/>
+                <param name="onload" value="true" />
+            </feature>
+        </config-file>
+        <js-module name="RestartPlugin" src="www/android/Restart.js">
+          <clobbers target="RestartPlugin"/>
+        </js-module>
+
+      <source-file src="src/android/RestartPlugin.java" target-dir="src/org/apache/cordova/restart" />
+
+    </platform>
+
+</plugin>
