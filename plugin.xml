@@ -2,7 +2,7 @@
 <plugin xmlns="http://www.phonegap.com/ns/plugins/1.0"
     xmlns:android="http://schemas.android.com/apk/res/android"
     id="cordova-plugin-restart"
-    version="1.0.1">
+    version="1.0.2">
 
     <name>Restart</name>
     <description>Cordova/Phonegap plugin to restart application</description>
